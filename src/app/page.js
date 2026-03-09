@@ -163,10 +163,12 @@ export default function Home() {
       {/* Footer */}
       <footer className="w-full py-8 text-center text-sm text-[#1f2924]/40 font-medium flex flex-col items-center gap-2">
         <p>© 2026 Dayflow App. Nurture your mind.</p>
-        <div className="flex items-center gap-4 mt-2">
+        <div className="flex flex-wrap justify-center items-center gap-4 mt-2 px-4">
           <Link href="/privacy" className="hover:text-[#1ba485] transition-colors">Privacy Policy</Link>
-          <span>•</span>
+          <span className="opacity-50">•</span>
           <Link href="/terms" className="hover:text-[#1ba485] transition-colors">Terms of Service</Link>
+          <span className="opacity-50">•</span>
+          <Link href="/delete-account" className="hover:text-[#e53e3e] transition-colors">Delete Account</Link>
         </div>
       </footer>
     </div>
