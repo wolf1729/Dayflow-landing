@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -160,8 +161,13 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full py-8 text-center text-sm text-[#1f2924]/40 font-medium">
+      <footer className="w-full py-8 text-center text-sm text-[#1f2924]/40 font-medium flex flex-col items-center gap-2">
         <p>© 2026 Dayflow App. Nurture your mind.</p>
+        <div className="flex items-center gap-4 mt-2">
+          <Link href="/privacy" className="hover:text-[#1ba485] transition-colors">Privacy Policy</Link>
+          <span>•</span>
+          <Link href="/terms" className="hover:text-[#1ba485] transition-colors">Terms of Service</Link>
+        </div>
       </footer>
     </div>
   );
